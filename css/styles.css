@@ -267,7 +267,7 @@ position: relative;
     opacity: 0;
   }
 }
- 
+
 
 .discord-btn {
 background-color: #232323; 
@@ -285,6 +285,26 @@ transition: background-color 0.4s ease;
 .discord-btn:hover {
 background-color: #302f2f; 
 }
+
+.meme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* or relative, depending on your layout needs */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px; /* adjust the width to fit your layout */
+  height: 200px; /* adjust the height as needed */
+  background-image: url('path/to/your/meme.jpg'); /* replace with the path to your meme */
+  background-size: cover; /* cover the entire div */
+  background-position: center; /* center the image */
+  border: 2px solid #00ff00; /* optional border for better visibility */
+  border-radius: 8px; /* optional rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* optional shadow */
+}
+
+
 .social-links {
   position: absolute;
   bottom: 20px;
