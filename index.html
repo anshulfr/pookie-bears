@@ -11,27 +11,20 @@
   <div class="container">
     <nav>
       <div class="team-name" title="Pookie Bears, previously: 1337_Y4PP3ER5">$ Pookie Bears</div>
-      <div class="nav-links">
-        <a href="index.html">
-          <button class="ui-btn">
-              <span>Home</span>
-          </button>
-      </a>
-        <a href="pages\members.html">
-          <button class="ui-btn">
-              <span>Members</span>
-          </button>
-      </a>
-        <a href="pages\achievements.html">
-          <button class="ui-btn">
-              <span>Achievements</span>
-          </button>
-      </a>
-        <a href="pages\writeups.html">
-          <button class="ui-btn">
-              <span>Writeups</span>
-          </button>
-      </a>
+      <div class="nav-links desktop-nav">
+        <a href="index.html"><button class="ui-btn"><span>Home</span></button></a>
+        <a href="pages\members.html"><button class="ui-btn"><span>Members</span></button></a>
+        <a href="pages\achievements.html"><button class="ui-btn"><span>Achievements</span></button></a>
+        <a href="pages\writeups.html"><button class="ui-btn"><span>Writeups</span></button></a>
+      </div>
+      <div class="mobile-nav">
+        <button class="dropdown-btn">≡</button>
+        <div class="dropdown-content">
+          <a href="index.html">Home</a>
+          <a href="pages\members.html">Members</a>
+          <a href="pages\achievements.html">Achievements</a>
+          <a href="pages\writeups.html">Writeups</a>
+        </div>
       </div>
     </nav>
     <div class="main-content">
@@ -40,19 +33,24 @@
       </div>
       <p><b>Welcome! We're a group of college students from India, united by our passion for cybersecurity.</b></p>
       <p><b>Every day is a new opportunity for us to learn and grow in this field.</b></p>
-      <p><b> If you're on a similar journey and want to collaborate, feel free to open a ticket on our Discord server.</b></p>
+      <p><b>If you're on a similar journey and want to collaborate, feel free to open a ticket on our Discord server.</b></p>
       <a href="https://discord.gg/ktgq7a9rVC" target="_blank">
         <button class="discord-btn"><b>Join Discord: Pookie Bears</b></button>
       </a>
-          </div>
-          <div class="social-links">
-            <a href="https://ctftime.org/team/311133" target="_blank">
-              <img src="images\ctftime.png" alt="CTFtime Logo">
-            </a>
-            <a href="https://discord.gg/ktgq7a9rVC" target="_blank">
-              <img src="images\discord.png" alt="Discord Logo">
-            </a>
-          </div>        
+    </div>
+    <div class="social-links">
+      <a href="https://ctftime.org/team/311133" target="_blank">
+        <img src="images\ctftime.png" alt="CTFtime Logo">
+      </a>
+      <a href="https://discord.gg/ktgq7a9rVC" target="_blank">
+        <img src="images\discord.png" alt="Discord Logo">
+      </a>
+    </div>        
   </div>  
+  <script>
+    document.querySelector('.dropdown-btn').addEventListener('click', function() {
+      document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
